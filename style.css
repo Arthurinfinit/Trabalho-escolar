@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+:root {
+    --cor-de-fundo: #1E1E1E;
+    --verde: #6FFF57;
+    --roxo: #8E1EFF;
+    --branco: #FFFFFF;
+    --cinza: #a1a1a1;
+    --preto: #000000;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
+    --cor-barra-junior: #fa2626;
+    --cor-barra-pleno: #fad326;
+    --cor-barra-senior: #a2fa26;
+    --largura-barra: 100px;
+    --espacamento-barra: 50px;
+    --altura-maxima-barra: 200px;
+    --fonte: url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+}
+
+body {
+    background-color: #1E1C31;
+    width: 100%;
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
+    align-items: center;
+    padding: 20px 20px; /* Adiciona espaçamento de 20px em todos os lados */
+    display: flex; /* Utiliza flexbox para centralizar o conteúdo */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto em todo o body */
+    justify-content: center;
+    margin: 0; /* Remove margens do body */
+    padding: 0; /* Remove preenchimento do body */
+}
+
+header {
+    background-color: var(--botao-ativo); /* Cor de fundo */
+    text-align: center; /* Centraliza o conteúdo do header */
+    color: var(--branco); /* Cor do texto */
+    margin: 0; /* Remove margens do body */
+    padding: 10px 0; /* Reduz o padding */
+    height: 50px; /* Define uma altura fixa, se desejado */
+    display: flex; /* Usar flexbox para centralizar conteúdo */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    width: 100%; /* Garante que o header ocupa 100% da largura */
+}
+
+header img {
+    max-height: 40px; /* Limita a altura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+.Profissões-em-Alta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1800px;
+    width: 100%;
+}
+
+    .abas-textos2 {
+        max-width: 1800px;
+    }
+
+/* Ajuste de todos os títulos principais (h2) */
+h2, .titulo-principal {
+    font-size: 32px; /* Define um tamanho padrão para os títulos principais */
+    text-align: center; /* Centraliza os títulos principais */
+    color: var(--branco); /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Ajuste de todos os subtítulos (h3) */
+h3, .aba-conteudo-titulo-principal {
+    font-size: 28px; /* Tamanho consistente para subtítulos */
+    color: var(--branco); /* Cor dos subtítulos */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    text-align: center; /* Centraliza os subtítulos */
+}
+
+/* Ajuste para título secundário nas abas */
+.aba-conteudo-titulo-secundario {
+    font-size: 20px; /* Tamanho para títulos menores */
+    text-align: center;
+    color: var(--roxo);
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+
+.abas-textos1, .abas-textos2 {
+    background-color: var(--botao-ativo);
+    padding: 0; /* Para não adicionar espaço extra */
+    border-radius: 0 0 40px 40px;
+}
+
+.abas-textos1 .aba-conteudo, .abas-textos2 .aba-conteudo {
+    background-color: var(--botao-inativo);
+    border: 2px solid var(--botao-ativo); /* Borda para simular o botão */
+    border-radius: 0 0 40px 40px;
+    padding: 20px;
+    margin-top: 0; /* Remove espaço entre botões e conteúdo */
+    color: var(--branco);
+}
+
+.abas-textos1 .aba-conteudo.ativo, .abas-textos2 .aba-conteudo.ativo {
+    background-color: var(--botao-ativo);
+}
+
+.aba-conteudo h3 {
+    margin-bottom: 10px; /* Espaçamento entre o título e o texto */
+}
+
+.aba-conteudo p {
+    font-size: 22px; /* Aumenta o tamanho da fonte dos parágrafos */
+    line-height: 1.5; /* Mantém o espaçamento entre as linhas */
+}
+
+.botoes1, .botoes2 {
+    display: flex;
+    justify-content: space-between; /* Para distribuir os botões igualmente */
+    margin-bottom: 0; /* Remove espaço entre botões e caixas de texto */
+}
+
+.botao {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    padding: 1em;
+    font-size: 22px; /* Aumenta o tamanho da fonte dos botões */
+    width: 100%; /* Cada botão ocupa 100% do espaço disponível */
+    border: none; /* Remove bordas padrão */
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+    cursor: pointer; /* Indica que é clicável */
+}
+
+
+.botao:first-child {
+    border-radius: 40px 0 0 0; /* Arredonda o primeiro botão */
+}
+
+.botao:last-child {
+    border-radius: 0 40px 0 0; /* Arredonda o último botão */
+}
+
+.botao.ativo {
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--roxo);
+}
+
+.titulo-principal {
+    text-align: center;
+}
+
+.abas-textos {
+    background-color: var(--botao-ativo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo.ativo {
+    display: block;
+}
+
+.aba-conteudo {
+    display: none;
+}
+
+.aba-conteudo-titulo-principal {
+    font-size: 28px;
+    text-align: center;
+}
+
+.aba-conteudo-titulo-secundario {
+    text-align: center;
+    color: var(--roxo);
+    text-transform: uppercase;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--botao-ativo);
+    color: var(--bg-color);
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+}
+
+/*gráficos*/
+
+.graficos {
+    margin-top: 2rem;
+}
+.graficos-container {
+    display: block;
+    justify-content: center;
+    margin-top: 0px;
+    padding: 0px
+
+}
+
+.grafico-container {
+    background-color: #3A375E; /* Cor de fundo da caixa */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 40px; /* Bordas arredondadas */
+    color: #FFFFFF !important; /* Muda a cor do texto dentro da caixa para branco */
+}
+
+
+
+
+
+/*cartas*/
+
+.Tcartas {
+    margin-top: 2rem
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.card {
+    height: 300px;
+    perspective: 1000px; /* Cria o efeito 3D */
+    margin: 26px;
+    width: calc(33.33% - 20px); /* Cada card ocupa 1/3 da largura do container menos margem */
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card-front {
+    background-color: var(--botao-inativo);
+    border: 0.125rem solid var(--branco);
+    color: #FFF;
+}
+
+.card-back {
+    background-color: var(--botao-ativo);
+    color: var(--branco);
+    transform: rotateY(180deg); /* Verso virado */
+}
+
+.card-inner.flip {
+    transform: rotateY(180deg);
+}
